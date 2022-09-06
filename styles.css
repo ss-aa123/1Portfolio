@@ -1,0 +1,78 @@
+.fixed-nav {
+    position: fixed;
+    top: 0;    /*fixes navigation area to top of page*/
+    width: 100%;    /*so it takes up 100% of the page's width*/
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;   /*so that the bullet points on our links in list dont show*/
+    margin-bottom: 0;
+}
+
+a {
+    padding: 8px 10px;
+    font-size: 1.5rem;
+}
+
+.fixed-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero-section {
+    height: 100vh;   /*we want our picture to take up the whole page*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/heroImage.jpg');
+    background-size: cover;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+}
+
+.hero-desc {
+    font-size: 2rem;
+}
+
+.hero-text {
+    text-align: center;
+    color: white; /*hero text is in the div so this color will apply to both the title and description as well */
+}
+
+.section-header {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-text {
+    padding-left: 2rem;
+}
+
+.about-container img {  /*write like this to reference the image inside the about-container div*/
+    width: 25%;
+    border-radius: 50%;
+}
+
+#about {
+    padding: 2rem;
+}
+
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-link {
+    text-decoration: none;
+    display: block; /*will make the links stacked on top of each other*/
+}
